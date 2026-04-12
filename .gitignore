@@ -1,0 +1,10 @@
+# Secrets — never commit real credentials (local .env may exist under services/)
+.env
+**/.env
+
+*.pyc
+__pycache__/
+services/wechat-download-api/data/rss.db
+services/wechat-download-api/static/qrcodes/*
+!services/wechat-download-api/static/qrcodes/.gitkeep
+
