@@ -724,7 +724,7 @@ ORDER BY a.publish_time ASC, a.id ASC;
 ### 单篇文章抓取与分析
 
 - `POST /api/article/fetch`
-  - 功能：带当前登录态抓取并解析单篇文章
+  - 功能：根据公众号文章链接抓取并解析单篇文章的内容
   - 请求体：
     - `url`
       - 必填
