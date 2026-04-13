@@ -40,8 +40,8 @@ flowchart TD
     F4 --> F5[调用微信后台文章列表接口]
     F5 --> F6[默认继续抓取文章全文]
     F6 --> F7[写入 SQLite]
-    F7 --> F8[(subscriptions)]
-    F7 --> F9[(articles)]
+    F7 --> F8[(表subscriptions)]
+    F7 --> F9[(表articles)]
 
     G --> G1{缓存库中是否命中?}
     G1 -->|命中| G2[直接查询 SQLite 返回结果]
