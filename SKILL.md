@@ -340,9 +340,9 @@ Invoke-RestMethod http://localhost:5000/api/health
 - 优先使用 `plain_content`
 - 若 `plain_content` 为空，再回退 `content`
   
-### 5. 根据公众号文章链接读取未缓存文章
+### 5. 根据公众号文章链接读取文章
 
-如果用户提供了微信公众号文章链接，需要分析其内容则处理流程是：
+如果用户提供了微信公众号文章链接（格式：`https://mp.weixin.qq.com/s/[加密字符串]`），需要获取其内容的处理流程是：
 
 1. 执行统一预检
 2. 先按 `link` 在 `articles` 表中查是否已有缓存
